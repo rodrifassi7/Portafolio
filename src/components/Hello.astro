@@ -1,3 +1,8 @@
+---
+import GitHub from "./icons/GitHub.astro";
+import Linkedin from "./icons/Linkedin.astro";
+---
+
 <main class="flex mx-auto h-screen max-w-[960px]">
   <section
     class="snap-center justify-center flex flex-col flex-grow w-full sm:w-60 px-4 sm:px-10 font-sans"
@@ -7,9 +12,21 @@
       <strong class="text-pink-700">Rodrigo Fassi</strong>
     </h1>
 
+    
+<p class="flex items-center text-5xl font-bold "><span class=" flex items-center bg-green-700  text-white text-sm  me-2 px-2.5 py-0.5 rounded ms-2">#OpenToWork</span></p>
+
+
     <p class="text-white text-lg border-b-2 mt-4 border-blue-500 text-center">
       Front-end Developer currently based in Cordoba, Argentina.
     </p>
+
+    <div class="flex m-6 gap-6 justify-center">
+        <Linkedin class="h-8 w-8 hover:scale-125 transition-all" />
+      
+      <a href="https://github.com/rodrifassi7" target="_blank">
+        <GitHub class="h-8 w-8 hover:scale-125 transition-all" />
+      </a>
+    </div>
   </section>
 
   <aside class="self-center mt-4 sm:mt-0">

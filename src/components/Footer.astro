@@ -3,9 +3,9 @@ import Github from "../components/icons/GitHub.astro";
 import Linkedin from "../components/icons/Linkedin.astro";
 ---
 
-<footer class="bg-yellow-500 rounded-lg shadow dark:bg-gray-900 m-4">
-  <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-    <div class="sm:flex sm:items-center sm:justify-center gap-7">
+<footer class=" rounded-lg w-auto shadow bg-gray-900 m-4">
+  <div class=" max-w-screen-xl mx-auto p-4 md:py-8">
+    <div class="sm:flex sm:items-center sm:justify-evenly">
       <a
         href="https://flowbite.com/"
         class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
@@ -16,29 +16,28 @@ import Linkedin from "../components/icons/Linkedin.astro";
           alt="Flowbite Logo"
         />
         <span
-          class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+          class="self-center text-2xl font-semibold whitespace-nowrap text-white"
           >Flowbite</span
         >
       </a>
       <ul
-        class="flex flex-wrap items-center gap-6 mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400"
+        class="flex flex-wrap items-center gap-6 mb-6 text-sm font-medium text-gray-500 sm:mb-0"
       >
         <li>
-          <a href="#" class="me-4 md:me-6">
-            <Github class="h-6 w-6" />
+          <a href="#">
+            <Github class="h-7 w-7 hover:scale-125 transition-all" />
           </a>
         </li>
         <li>
-          <a href="#" class="me-4 md:me-6">
-            <Linkedin class="h-6 w-6" />
+          <a href="https://www.linkedin.com/in/rodrigofassi/">
+            <Linkedin class="h-7 w-7 hover:scale-125 transition-all" />
           </a>
         </li>
       </ul>
     </div>
-    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-    <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400"
-      >© 2024 <a href="https://flowbite.com/" class="">Fassi™</a>. Ningun
-      derecho reservado.</span
+    <hr class="my-6 sm:mx-auto border-gray-700 lg:my-8" />
+    <span class="block text-sm  sm:text-center text-gray-400"
+      >© 2024 <a href='#"' class="">Fassi™</a>. Ningun derecho reservado.</span
     >
   </div>
 </footer>
