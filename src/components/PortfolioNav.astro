@@ -1,27 +1,23 @@
+---
+import Avatar from "./Avatar.astro";
+---
+
 <nav
   id="header-nav"
-  class=" py-4 sm:px-10 flex items-center fixed top-0 w-screen justify-center text-white z-10"
+  class="py-2 sm:px-10 sm:pb-4 flex items-center fixed top-0 w-screen justify-evenly text-white z-10"
 >
-  <!-- <div class="flex justify-start">
-    <p class="text-blue-500 bg-white rounded-full box-content p-2 mr-7">
-      &ltRF/&gt
-    </p>
-  </div> -->
+  <div class="pt-3">
+    <Avatar />
+  </div>
 
-  <div class="relative  mr-7 inline-flex items-center justify-center w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
-    <span class="font-medium text-gray-600 dark:text-gray-300">RF</span>
-</div>
-
-
-
-
-  <div class="hidden sm:flex">
+  <div class="hidden sm:flex flex-grow justify-center">
     <ul class="flex gap-10">
+      
       <li class="hover:text-2xl max-h-1 hover:text-red-500 transition-all">
-        <a href="#top">Inicio</a>
+        <a href="#experiencia">Experiencia</a>
       </li>
       <li class="hover:text-2xl max-h-1 hover:text-red-500 transition-all">
-        <a href="#experiencia">Proyectos</a>
+        <a href="#proyectos">Proyectos</a>
       </li>
       <li class="hover:text-2xl max-h-1 hover:text-red-500 transition-all">
         <a href="#contacto">Contacto</a>

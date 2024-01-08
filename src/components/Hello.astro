@@ -3,26 +3,26 @@ import GitHub from "./icons/GitHub.astro";
 import Linkedin from "./icons/Linkedin.astro";
 ---
 
-<main class="flex mx-auto h-screen max-w-[960px]">
-  <section
-    class="snap-center justify-center flex flex-col flex-grow w-full sm:w-60 px-4 sm:px-10 font-sans"
-  >
-    <h1 class="px-4 sm:px-10 text-white text-1xl sm:text-6xl">
-      Hello, my name is <br />
-      <strong class="text-pink-700">Rodrigo Fassi</strong>
+<main class="flex sm:mx-auto mx-2 h-screen max-w-[960px] justify-evenly">
+  <section class="justify-center flex flex-col flex-grow  text-center">
+    <h1 class="text-white text-2xl sm:text-4xl">
+      Hola, soy <br />
+      <strong class="text-pink-700 text-5xl">Rodrigo Fassi</strong>
     </h1>
 
-    
-<p class="flex items-center text-5xl font-bold "><span class=" flex items-center bg-green-700  text-white text-sm  me-2 px-2.5 py-0.5 rounded ms-2">#OpenToWork</span></p>
+    <span class="text-naranja text-lg mt-4 border-blue-500">
+      Front-end Developer de Cordoba, Argentina.
+    </span>
 
-
-    <p class="text-white text-lg border-b-2 mt-4 border-blue-500 text-center">
-      Front-end Developer currently based in Cordoba, Argentina.
+    <p class="text-gray-300 my-4">
+      Apasionado por la creación de experiencias web cautivadoras.
     </p>
 
     <div class="flex m-6 gap-6 justify-center">
+      <a href="https://github.com/rodrifassi7" target="_blank">
         <Linkedin class="h-8 w-8 hover:scale-125 transition-all" />
-      
+      </a>
+
       <a href="https://github.com/rodrifassi7" target="_blank">
         <GitHub class="h-8 w-8 hover:scale-125 transition-all" />
       </a>
@@ -31,8 +31,8 @@ import Linkedin from "./icons/Linkedin.astro";
 
   <aside class="self-center mt-4 sm:mt-0">
     <img
-      class="w-full sm:w-64 h-64 rounded-3xl"
-      src="../../public/images/portfolio_pic.jpg"
+      class="w-full sm:w-64 h-64 rounded-3xl object-cover"
+      src="../../public/portfolio_pic.jpg"
       alt="Selfie de Rodrigo"
     />
   </aside>

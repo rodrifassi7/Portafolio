@@ -6,7 +6,7 @@ interface Props {
 const { title } = Astro.props;
 
 import PortfolioNav from "../components/PortfolioNav.astro";
-
+import '@fontsource-variable/onest'
 import Footer from "../components/Footer.astro";
 ---
 
@@ -44,6 +44,9 @@ import Footer from "../components/Footer.astro";
     background-size: 224px;
     scroll-behavior: smooth;
   }
+  body {
+  font-family: 'Onest Variable', sans-serif;
+}
   code {
     font-family:
       Menlo,
@@ -69,14 +72,10 @@ import Footer from "../components/Footer.astro";
         0px 0px 0px 1px hsla(0, 0%, 100%, 0.1);
       background: rgba(0, 0, 0, 0.3);
       backdrop-filter: blur(10px);
+      scale: 90%;
+      border-radius: 70px;
     }
   }
-
-  /* @keyframes shrinkNavbar {
-    to {
-      scale: 80%;
-    }
-  } */
 
   @media (prefers-reduce-motion: reduce) {
     html {

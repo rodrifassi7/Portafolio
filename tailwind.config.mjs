@@ -6,7 +6,10 @@ export default {
 			colors:{
 				primary:'#29353c',
 				titles:'#09f',
-				bg:'#292F33'
+				bg:'#292F33',
+				naranja:'#95a6a7',
+				probando:'#2b3d4f',
+				nav:'#354a5f'
 			}
 		},
 	},
