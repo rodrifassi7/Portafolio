@@ -27,4 +27,3 @@ Bienvenido a mi portfolio. Este proyecto fue desarrollado con Astro y Tailwind y
 -Terminar seccion de experiencia.
 -Cambiar las carpetas y archivos a español.
 -Ver el cambio de tema (colores).
--Definir el footer.
