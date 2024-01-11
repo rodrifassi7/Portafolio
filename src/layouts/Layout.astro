@@ -6,7 +6,7 @@ interface Props {
 const { title } = Astro.props;
 
 import PortfolioNav from "../components/PortfolioNav.astro";
-import '@fontsource-variable/onest'
+import "@fontsource-variable/onest";
 import Footer from "../components/Footer.astro";
 ---
 
@@ -16,13 +16,19 @@ import Footer from "../components/Footer.astro";
     <meta charset="UTF-8" />
     <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/download.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="bg-gray-700">
+  <body class="relative text-black dark:text-white">
+    <body class="relative h-full w-full bg-slate-950">
+      <div
+        class="-z-40 absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_500px_at_50%_200px,#3e3e3e,transparent)]"
+      >
+      </div>
+    </body>
     <PortfolioNav />
-    <slot />
+    <slot class="z-99" />
     <Footer />
   </body>
 </html>
@@ -45,8 +51,8 @@ import Footer from "../components/Footer.astro";
     scroll-behavior: smooth;
   }
   body {
-  font-family: 'Onest Variable', sans-serif;
-}
+    font-family: "Onest Variable", sans-serif;
+  }
   code {
     font-family:
       Menlo,

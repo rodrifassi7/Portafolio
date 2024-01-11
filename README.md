@@ -21,9 +21,9 @@ Bienvenido a mi portfolio. Este proyecto fue desarrollado con Astro y Tailwind y
 
 //TODO: 
 -Seccion proyectos.
--Cambiar navegacion nav.
--Elegir fonts y paleta de colores.
+
+
 -Arreglar boton del nav cuando esta en mobile.
 -Terminar seccion de experiencia.
--Cambiar las carpetas y archivos a español.
+
 -Ver el cambio de tema (colores).
