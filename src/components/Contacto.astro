@@ -1,9 +1,14 @@
+---
+
+---
+
 <main id="contacto" class="max-w-[960px] mx-auto mt-28">
   <section>
     <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-      <h1 class="my-4 font-bold text-center text-velde text-4xl mb-4">
+      <h1 class="mt-4 font-bold text-center text-velde text-4xl ">
         &ltConectemos/&gt
       </h1>
+      <h6 class="text-center text-[10px] mb-4">(formulario no disponible por el momento)</h6>
       <p
         class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl"
       >
@@ -52,6 +57,7 @@
         </div>
         <div class="flex justify-center">
           <button
+            id="miBoton"
             type="submit"
             class="inline-flex border items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg hover:bg-velde hover:text-black hover:border-black"
             >Enviar</button
@@ -61,3 +67,19 @@
     </div>
   </section>
 </main>
+
+<template>
+  <button
+    id="miBoton"
+    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+    >Haz clic aquí</button
+  >
+</template>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("miBoton").addEventListener("click", function () {
+      alert("El Formulario aún no está habilitado. ¡Pronto estará disponible!");
+    });
+  });
+</script>
