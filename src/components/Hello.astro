@@ -3,14 +3,14 @@ import GitHub from "./icons/GitHub.astro";
 import Linkedin from "./icons/Linkedin.astro";
 ---
 
-<main class="flex sm:mx-auto mx-2 h-screen justify-evenly">
-  <section class="justify-center flex flex-col flex-grow  text-center">
+<main class="flex sm:mx-auto mx-2 h-screen justify-evenly text-2xl">
+  <section class="justify-center flex flex-col flex-grow text-center">
     <h1 class="text-white text-2xl sm:text-4xl">
       Hola, soy <br />
       <strong class="text-velde text-5xl">Rodrigo Fassi</strong>
     </h1>
 
-    <span class="text-naranja text-lg mt-4 border-blue-500">
+    <span class="text-naranja  mt-4 border-blue-500 ">
       Front-end Developer de Cordoba, Argentina.
     </span>
 
@@ -18,24 +18,36 @@ import Linkedin from "./icons/Linkedin.astro";
       Apasionado por la creación de experiencias web cautivadoras.
     </p>
 
-    <div class="flex m-6 gap-6 justify-center  ">
+    <div class="flex m-6 gap-6 justify-center">
       <a href="https://github.com/rodrifassi7" target="_blank">
         <Linkedin class="h-8 w-8 hover:scale-125 transition-all mt-2" />
       </a>
 
       <a href="https://github.com/rodrifassi7" target="_blank">
-        <GitHub class="h-8 w-8 hover:scale-125 transition-all mt-2 " />
+        <GitHub class="h-8 w-8 hover:scale-125 transition-all mt-2" />
       </a>
-      <a href="#experiencia" class=" inline-flex border  items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg hover:bg-velde hover:text-black hover:border-black ">
+      <a
+        href="#experiencia"
+        class="inline-flex border items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg hover:bg-velde hover:text-black hover:border-black"
+      >
         Conóceme
-        <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-    </a>
+        <svg
+          class="ml-2 -mr-1 w-5 h-5"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          ><path
+            fill-rule="evenodd"
+            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+            clip-rule="evenodd"></path></svg
+        >
+      </a>
     </div>
   </section>
 
-  <aside class="self-center mt-4 sm:mt-0">
+  <aside class="self-center mt-4 sm:mt-0 sm">
     <img
-      class="w-full sm:w-64 h-64 rounded-3xl object-cover"
+      class="w-full sm:w-64 h-64 rounded-3xl object-cover hidden sm:block"
       src="/portfolio_pic.jpg"
       alt="Selfie de Rodrigo"
     />
