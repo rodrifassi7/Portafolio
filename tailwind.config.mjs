@@ -4,11 +4,17 @@ export default {
 	theme: {
 		extend: {
 			colors:{
-				velde:'#6bff66'
+				velde:'#6bff66',
+				
 			}
 		},
+		boxShadow: {
+			green: '0 4px 6px -1px rgba(107, 255, 102, 0.1), 0 2px 4px -1px rgba(107, 255, 102, 0.06)', // Definir la sombra verde personalizada
+		  },
 	},
-	plugins: [require("daisyui")],
+	plugins: [require("daisyui"),
+		require('tailwindcss-animated')
+	  ],
 }
 
 
