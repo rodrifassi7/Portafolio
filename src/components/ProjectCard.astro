@@ -1,13 +1,13 @@
 ---
 const PROJECTS = [
-{
-    title:'Heroes App',
-    description: 'Heroes App: Una aplicación React con Vite para explorar héroes de Marvel y DC, buscar, ver tarjetas detalladas y gestionar sesión.',
+  {
+    title: "Heroes App",
+    description:
+      "Heroes App: Una aplicación React con Vite para explorar héroes de Marvel y DC, buscar, ver tarjetas detalladas y gestionar sesión.",
     link: "#",
     github: "#",
-    image: "./gifSearch.png",
-    tags: ["React", "CSS", 'Vite', 'Bootstrap'],
-
+    image: "./heroesapp.webp",
+    tags: ["React", "CSS", "Vite", "Bootstrap"],
   },
   {
     title: "MovieApp",
@@ -45,11 +45,10 @@ const PROJECTS = [
     image: "./gifSearch.png",
     tags: ["React", "CSS"],
   },
-
 ];
 ---
 
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
   {
     PROJECTS.map(({ title, description, tags, image, link }) => (
       <article
