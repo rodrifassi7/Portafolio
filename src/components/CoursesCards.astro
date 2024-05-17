@@ -1,0 +1,43 @@
+---
+const PROJECTS = [
+  {
+    title: "Desarrollo Web",
+    description:
+      "Heroes App: Una aplicación React con Vite para explorar héroes de Marvel y DC, buscar, ver tarjetas detalladas y gestionar sesión.",
+
+    image: "./DesarrolloWeb.webp",
+    tags: ["React", "CSS", "Vite", "Bootstrap"],
+  },
+  {
+    title: "JavaScript",
+    description:
+      "Heroes App: Una aplicación React con Vite para explorar héroes de Marvel y DC, buscar, ver tarjetas detalladas y gestionar sesión.",
+
+    image: "./JSCoder.webp",
+    tags: ["React", "CSS", "Vite", "Bootstrap"],
+  },
+  {
+    title: "JavaScript",
+    description:
+      "Heroes App: Una aplicación React con Vite para explorar héroes de Marvel y DC, buscar, ver tarjetas detalladas y gestionar sesión.",
+
+    image: "./CourseraJS.webp",
+    tags: ["React", "CSS", "Vite", "Bootstrap"],
+  },
+];
+---
+
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+  {
+    PROJECTS.map(({ title, tags, image }) => (
+      <article
+        key={title}
+        class=" w-96 mt-3 sm:hover:scale-105 shadow-green transition-transform duration-300"
+      >
+        <figure>
+          <img src={image} alt={`Imagen del certificado:  ${title}`} />
+        </figure>
+      </article>
+    ))
+  }
+</div>
