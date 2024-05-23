@@ -45,6 +45,15 @@ const PROJECTS = [
     image: "./gifSearch.png",
     tags: ["React", "CSS"],
   },
+  {
+    title: "Portfolio de arquitecta",
+    description:
+      "Portfolio desarrollado para una arquitecta, destacando sus proyectos más importantes. El diseño está basado en el estilo de su CV, asegurando una coherencia visual y profesional que refleja su identidad.",
+    link: "https://agusmebar.netlify.app/",
+    github: "Privado",
+    image: "./agusport.png",
+    tags: ["Astro", "Tailwind"],
+  },
 ];
 ---
 
@@ -53,7 +62,7 @@ const PROJECTS = [
     PROJECTS.map(({ title, description, tags, image, link }) => (
       <article
         key={title}
-        class="card  w-96 bg-base-100 shadow-xl sm:hover:scale-105 shadow-green transition-transform duration-300"
+        class="card  w-96 bg-base-100 shadow-xl sm:hover:scale-105 shadow-green transition-transform duration-300 mx-auto"
       >
         <figure>
           <a href={link} target="_blank">
@@ -65,7 +74,7 @@ const PROJECTS = [
         </figure>
         <div class="card-body ">
           <h2 class="card-title">{title}</h2>
-          <p>{description}</p>
+          <p class="text-pretty">{description}</p>
           <div class="card-actions">
             <ul class="flex flex-row gap-7">
               {tags.map((tag, index) => (
