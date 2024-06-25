@@ -1,5 +1,5 @@
 ---
-const PROJECTS = [
+const COURSES = [
   {
     title: "Desarrollo Web",
     description:
@@ -29,10 +29,10 @@ const PROJECTS = [
 
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
   {
-    PROJECTS.map(({ title, tags, image }) => (
+    COURSES.map(({ title, tags, image }) => (
       <article
         key={title}
-        class=" w-96 mt-3 sm:hover:scale-105 shadow-green transition-transform duration-300"
+        class="w-64 mx-auto lg:w-96 mt-3 sm:hover:scale-105 shadow-green transition-transform duration-300"
       >
         <figure>
           <img src={image} alt={`Imagen del certificado:  ${title}`} />
